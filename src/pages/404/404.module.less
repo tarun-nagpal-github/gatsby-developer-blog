@@ -1,0 +1,21 @@
+@import (reference) '../../style/index.less';
+
+.container {
+    .flex-center();
+    @media @mobile {
+        flex-direction: column;
+    }
+}
+
+.image {
+    max-width: 500px;
+    margin: auto;
+    img {
+        width: 100%;
+    }
+}
+
+.message {
+    margin: auto;
+    text-align: center;
+}

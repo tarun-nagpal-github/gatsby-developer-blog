@@ -1,0 +1,26 @@
+@import (reference) '../../../style/index.less';
+
+.container {
+    .flex-center();
+    .frame-medium();
+    > div:focus {
+        outline: none;
+    }
+    @media @mobile {
+        margin-top: @margin-small;
+        margin-bottom: @margin-zero;
+    }
+}
+
+.icon {
+    height: 40px;
+    width: 40px;
+    margin-right: @margin-medium;
+    outline-color: transparent;
+    transition: @transition-time opacity, @transition-time transform;
+    &:hover {
+        cursor: pointer;
+        opacity: .8;
+        transform: scale(1.2)
+    }
+}
